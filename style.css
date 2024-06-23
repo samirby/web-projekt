@@ -1,0 +1,617 @@
+:root {
+    --Hauptcolor: #0E104B;
+    --Orange: #F7A400;
+    --BG-light: #ECF6FA;
+    --BG-Light-Orange: #FEF6E6;
+
+}
+
+/* outfit-200 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/assets/fonts/outfit-v11-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-300 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/assets/fonts/outfit-v11-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-regular - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/outfit-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-500 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/outfit-v11-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-600 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/assets/fonts/outfit-v11-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-700 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/outfit-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-800 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/assets/fonts/outfit-v11-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-900 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/assets/fonts/outfit-v11-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 17px;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    margin: 0;
+    padding-top: 60px;
+
+    color: green;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: clamp(1.765em, 5vw, 70px);
+    line-height: 1;
+    margin-top: 2em;
+}
+
+h2 {
+    font-size: clamp(1.53em, 4vw, 40px);
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+    color: var(--Hauptcolor);
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--Orange);
+}
+
+.container {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--BG-light);
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.3);
+
+}
+
+#navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: var(--BG-light);
+}
+
+@media screen and (min-width: 850px) {
+    #navbar .container {
+        height: 100px;
+    }
+}
+
+#brand {
+    height: 60px;
+}
+
+@media screen and (min-width: 850px) {
+    #brand {
+        height: 60px;
+    }
+}
+
+#brand img {
+    height: 100%;
+}
+
+#brand img:not([src$="svg"]) {
+    width: auto;
+}
+
+.nav-menu,
+.sub-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+
+}
+
+#nav-main {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 0;
+    background-color: var(--BG-light);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease-in-out;
+    overflow-y: auto;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 850px) {
+    #nav-main {
+        position: static;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0;
+        overflow: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+#nav-main a {
+    display: inline-block;
+    color: var(--Hauptcolor);
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.75em 0;
+}
+
+@media screen and (min-width: 850px) {
+    #nav-main a {
+        font-size: 0.85em;
+    }
+}
+
+#nav-main a:hover {
+    color: var(--Orange);
+}
+
+#nav-main a:active {
+    background-color: yellow;
+}
+
+#nav-main > li > a {
+    font-size: 1.765em;
+    line-height: 60px;
+    padding: 0;
+}
+
+@media screen and (min-width: 850px) {
+    #nav-main > li > a {
+        font-size: 1em;
+        line-height: 100px;
+    }
+}
+
+#nav-main .current-menu-item > a {
+    color: var(--Orange);
+}
+
+@media screen and (min-width: 850px) {
+    #nav-main .current-menu-parent > a {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    #nav-main > li {
+        position: relative;
+        margin-left: 2em;
+    }
+
+    #nav-main .sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -2rem);
+        width: 200px;
+        padding: 0.5em;
+        background-color: var(--BG-light);
+        border-radius: 0;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+
+    #nav-main li:hover > .sub-menu {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, 0);
+    }
+
+    #nav-main .sub-menu a {
+        display: block;
+    }
+}
+
+#nav-button {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 850px) {
+    #nav-button {
+        display: none;
+    }
+}
+
+#nav-button-icon,
+#nav-button-icon::before,
+#nav-button-icon::after {
+    width: 40px;
+    height: 3px;
+    background-color: var(--Orange);
+}
+
+#nav-button-icon {
+    display: block;
+    position: relative;
+    transition: background-color 250ms ease-in-out;
+}
+
+#nav-button-icon::before,
+#nav-button-icon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform 250ms ease-in-out;
+
+}
+
+#nav-button-icon::before {
+    transform: translateY(-12px);
+}
+
+#nav-button-icon::after {
+    transform: translateY(12px);
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle:checked ~ #nav-button #nav-button-icon {
+    background-color: transparent;
+}
+
+#nav-toggle:checked ~ #nav-button #nav-button-icon::before {
+    transform: rotate(-45deg);
+}
+
+#nav-toggle:checked ~ #nav-button #nav-button-icon::after {
+    transform: rotate(45deg);
+}
+
+#nav-toggle:checked ~ #nav-main {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--Hauptcolor);
+
+    .container{
+        background-color: var(--Hauptcolor);
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        padding: 50px 0;
+        background-color: var(--Hauptcolor);
+
+        h4{
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+                   }
+        ul{
+            padding: 0;
+
+            li a{
+                transition: .3s;
+                font-weight: 300;
+                color: white;
+                font-size: 16px;
+
+                &:hover {
+                    color: var(--Orange);
+                }
+            }
+        }
+
+        .box-logo{
+            img {
+                width: 250px;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: white;
+                font-size: 18px;
+                font-weight: 300            }
+        }
+
+
+        .box {
+
+            ul li {
+                margin-bottom: 8px;
+            }
+
+            a {
+
+            }
+
+
+
+
+
+
+            .social-media-block {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    font-size: 18px;
+                    padding-bottom: 8px;
+                    transition: .5s;
+                    font-weight: 400;
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        color: var(--Orange);
+                    }
+                }
+
+                i {
+                    margin-right: 10px;
+                    text-decoration: none;
+
+                }
+
+
+            }
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 320px) {
+    footer {
+        .footer-container {
+
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    footer {
+
+        .footer-container {
+
+            grid-template-columns: repeat(3, 1fr);
+
+            .logo-footer {
+                grid-area: 1 / 1 / 2 / 4;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        .footer-container {
+            grid-template-columns: repeat(5, 1fr);
+
+            .logo-footer {
+                grid-area: 1 / 1 / 2 / 3;
+            }
+
+            .info-bus {
+                padding-right: 100px;
+            }
+        }
+    }
+}
+
