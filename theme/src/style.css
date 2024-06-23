@@ -14,7 +14,7 @@
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 200;
-    src: url('/assets/fonts/outfit-v11-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/theme/srcme/src/assets/fonts/outfit-v11-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* outfit-300 - latin */
@@ -22,7 +22,7 @@
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 300;
-    src: url('/assets/fonts/outfit-v11-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/theme/srcme/src/assets/fonts/outfit-v11-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* outfit-regular - latin */
@@ -30,7 +30,7 @@
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
-    src: url('/assets/fonts/outfit-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/theme/srcme/src/assets/fonts/outfit-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* outfit-500 - latin */
@@ -38,7 +38,7 @@
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 500;
-    src: url('/assets/fonts/outfit-v11-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/theme/srcme/src/assets/fonts/outfit-v11-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* outfit-600 - latin */
@@ -46,7 +46,7 @@
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
-    src: url('/assets/fonts/outfit-v11-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/theme/srcme/src/assets/fonts/outfit-v11-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* outfit-700 - latin */
@@ -54,7 +54,7 @@
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 700;
-    src: url('/assets/fonts/outfit-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/theme/srcme/src/assets/fonts/outfit-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* outfit-800 - latin */
@@ -62,7 +62,7 @@
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 800;
-    src: url('/assets/fonts/outfit-v11-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/theme/srcme/src/assets/fonts/outfit-v11-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* outfit-900 - latin */
@@ -70,7 +70,7 @@
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 900;
-    src: url('/assets/fonts/outfit-v11-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/theme/srcme/src/assets/fonts/outfit-v11-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 
