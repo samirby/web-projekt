@@ -222,28 +222,28 @@ body.admin-bar #navbar {
     right: 0;
     left: 0;
     z-index: 1000;
-    background-color: var(--BG-light);
-    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1)
+    background-color: var(--Hauptcolor);
 }
 #navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 150px;
-
-    background-color: var(--BG-light);
+    height: var(--navbar-height-mobile);
+    background-color: var(--Hauptcolor);
 }
 @media screen and (min-width: 850px) {
     #navbar .container {
-        height: 100px;
+        height: var(--navbar-height-desktop);
     }
 }
 #brand {
-    height: 60px;
+    height: calc(var(--navbar-height-mobile) / 2);
 }
 @media screen and (min-width: 850px) {
     #brand {
-        height: 60px;
+        height: calc(var(--navbar-height-desktop) / 2);
     }
 }
 #brand img {
@@ -265,7 +265,7 @@ body.admin-bar #navbar {
     bottom: 0;
     left: 0;
     padding: 2rem 0;
-    background-color: var(--BG-light);
+    background-color: var(--Hauptcolor);
     opacity: 0;
     pointer-events: none;
     transition: opacity 200ms ease-in-out;
@@ -285,7 +285,7 @@ body.admin-bar #navbar {
 }
 #nav-main a {
     display: inline-block;
-    color: var(--Hauptcolor);
+    color: white;
     text-decoration: none;
     padding: 0.75em 0;
 }
@@ -295,14 +295,14 @@ body.admin-bar #navbar {
     }
 }
 #nav-main a:hover {
-    color: var(--Hauptcolor);
+    color: var(--Orange);
 }
 #nav-main a:active {
-    background-color: var(--BG-light);
+    background-color: white;
 }
 #nav-main > li > a {
     font-size: 1.765em;
-    line-height: 60px;
+    line-height: var(--navbar-height-mobile);
     padding: 0;
 }
 @media screen and (min-width: 850px) {
@@ -312,7 +312,7 @@ body.admin-bar #navbar {
     }
 }
 #nav-main .current-menu-item > a {
-    color: var(--Hauptcolor);
+    color: var(--Orange);
 }
 @media screen and (min-width: 850px) {
     #nav-main .current-menu-parent > a {
@@ -331,24 +331,13 @@ body.admin-bar #navbar {
         transform: translate(-50%, -2rem);
         width: 200px;
         padding: 0.5em;
-        background-color: var(--BG-light);
-        border-radius: 12px;
+        background-color: var(--Hauptcolor);
+        border-radius: 0;
         opacity: 0;
         pointer-events: none;
         transition: opacity 200ms ease-in-out, transform 150ms linear;
     }
-    #nav-main .sub-menu::before {
-        content: "";
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 10px 16px 10px;
-        border-color: transparent transparent var(--Hauptcolor) transparent;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -100%);
-    }
+
     #nav-main li:hover > .sub-menu {
         opacity: 1;
         pointer-events: auto;
@@ -362,6 +351,8 @@ body.admin-bar #navbar {
     width: var(--navbar-height-mobile);
     height: var(--navbar-height-mobile);
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -376,7 +367,7 @@ body.admin-bar #navbar {
 #nav-button-icon::after {
     width: 40px;
     height: 3px;
-    background-color: var(--Hauptcolor);
+    background-color: White
 }
 #nav-button-icon {
     display: block;
@@ -391,7 +382,6 @@ body.admin-bar #navbar {
     left: 0;
     top: 0;
     transition: transform 250ms ease-in-out;
-
 }
 #nav-button-icon::before {
     transform: translateY(-12px);
@@ -415,7 +405,6 @@ body.admin-bar #navbar {
     opacity: 1;
     pointer-events: auto;
 }
-
 
 
 
