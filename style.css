@@ -87,7 +87,7 @@ body {
     margin: 0;
     padding-top: 60px;
 
-    color: green;
+    color: var(--Hauptcolor);
     font-family: "Outfit", sans-serif;
     font-weight: 300;
 }
@@ -151,6 +151,7 @@ a:active {
     padding-left: 30px;
     padding-right: 30px;
     background-color: white;
+    padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -160,8 +161,15 @@ a:active {
     }
 }
 
+header{
+    height: 50vh;
+    background-color: red;
+}
 
-
+.section1{
+    height: 50vh;
+    background-color: yellow;
+}
 
 
 
@@ -442,7 +450,72 @@ a:active {
 
 
 
+/* ############## BLOG ############## */
+.post {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--BG-light);
+    margin-top: 1.5em;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: box-shadow 200ms linear;
 
+}
+
+.post .post-image{
+    img{
+        width: 250px;
+        height: auto;
+    }
+}
+.post:hover {
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+}
+.post .post-title {
+    margin: 0 0 0 0.2em;
+    font-weight: 400;
+}
+.post .post-title a {
+    color: var(--Hauptcolor);
+}
+.post .meta > *,
+.single-post .meta > * {
+    display: inline-block;
+    font-size: 0.85em;
+    color: var(--Orange);
+}
+.post .meta .date,
+.single-post .meta .date {
+    margin-right: 0.6em;
+    margin-left: 0.6em;
+    padding-right: 0.6em;
+    border-right: 1px solid var(--Hauptcolor);
+}
+
+
+
+.pagination {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+.pagination > * {
+    display: inline-block;
+    padding: 0.2em 0.4em;
+}
+.pagination a {
+    color: inherit;
+}
+.pagination a:hover {
+    color: var(--Orange);
+    text-decoration: none;
+}
+.pagination .current {
+    color: var(--Orange);
+    font-weight: 600;
+}
 
 
 
@@ -527,7 +600,6 @@ footer {
                 font-weight: 300            }
         }
 
-
         .box {
 
             ul li {
@@ -537,10 +609,6 @@ footer {
             a {
 
             }
-
-
-
-
 
 
             .social-media-block {
@@ -565,11 +633,8 @@ footer {
                     text-decoration: none;
 
                 }
-
-
             }
         }
-
     }
 }
 
