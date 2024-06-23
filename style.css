@@ -223,6 +223,7 @@ body.admin-bar #navbar {
     left: 0;
     z-index: 1000;
     background-color: var(--BG-light);
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1)
 }
 #navbar .container {
     display: flex;
@@ -535,6 +536,7 @@ body.admin-bar #navbar {
 
 footer {
     background-color: var(--Hauptcolor);
+    margin-top: 120px;
 
     .container{
         background-color: var(--Hauptcolor);
