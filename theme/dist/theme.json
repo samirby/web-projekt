@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "settings":{
+    "layout": {
+      "contentSize": "1400px",
+      "wideSize": "1600px"
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "units": ["em", "rem", "px", "vh", "vw", "%"]
+    },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "name": "BG Base",
+          "slug": "bg-base",
+          "color": "orange"
+
+        },
+        {
+          "name": "Base",
+          "slug": "base",
+          "color": "red"
+        }
+
+
+      ]
+    }
+  }
+}

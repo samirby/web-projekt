@@ -2,9 +2,6 @@
 
     <div class="container">
         <div class="footer-container">
-
-
-
             <div class="box logo-footer info-bus box-logo">
                 <?php
                 if(function_exists('the_custom_logo')) {
@@ -47,22 +44,48 @@
                 ?>
             </div>
 
-            <div class="box ">
-                <h4>Social Media</h4>
-                <ul class="social-media-block">
-                    <a href="#"><i class="fa fa-facebook"></i>Facebook</a>
-                    <a href="#"><i class="fa fa-instagram"></i>Instagram</a>
-                    <a href="#"><i class="fa fa-google"></i>Google</a>
-                    <a href="#"><i class="fa fa-linkedin"></i>Linkedin</a>
-                </ul>
+            <div class="box social-links column box">
+                <h4>Social Media</h4>     <!--<ul class="social-media-block"> -->
+                <?php
+                $social_links = array('linkedin', 'instagram', 'facebook', 'github');
 
+                foreach ($social_links as $item):
+                    $link = get_theme_mod($item); ?>
 
+                    <?php if ($link): ?>
+
+                    <a href="<?php echo esc_url($link); ?>" target="_blank">
+
+                        <?php // sprintf - 1. Wert = String (Im String können Variablen definiert werden - %1$s)
+                        //2. Wert = Inhalt für Variable (%1$s)
+                        ?>
+                        <span class="icon-<?php echo $item; ?>" role="img"
+                              aria-label="<?php echo sprintf(__('Folge uns auf %1$s', 'webdev'), ucfirst($item)); ?>"></span>
+
+                        <!--    Alternative Variante            -->
+                        <!--                <span>-->
+                        <!--                    class="icon---><?php //echo $item; ?><!--" role="img"-->
+                        <!--                      aria-label="--><?php //echo __('Folge uns auf ', 'webdev') . $item; ?><!--"-->
+                        <!--                    -->
+                        <!--                </span>-->
+
+                    </a>
+
+                <?php endif; ?>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
 </footer >
 
+<div class="copyright column">
+    <?php
+        echo sprintf(__('&copy; %1$s, %2$s', 'webdev'), date('Y'), get_bloginfo('name'));
+    ?>
+</div>
 
+<div id="to-top" class="show"><?php _e('Top', 'webdev'); ?></div>
 
 </body>
 </html>
+
