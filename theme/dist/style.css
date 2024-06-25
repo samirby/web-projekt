@@ -459,16 +459,28 @@ body.admin-bar #navbar {
 .post .meta > *,
 .single-post .meta > * {
     display: inline-block;
-    font-size: 0.85em;
+    font-size: 1em;
     color: var(--Orange);
+
+
 }
 .post .meta .date,
-.single-post .meta .date {
+.single-post .meta .date,
+.single-post .meta,
+.vija{
     margin-right: 0.6em;
     margin-left: 0.6em;
     padding-right: 0.6em;
     border-right: 1px solid var(--Hauptcolor);
 }
+
+.post-thumbnail img.full-width {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 
 
 

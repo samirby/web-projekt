@@ -19,21 +19,20 @@
 
             <article class="post">
                 <div class="post-image">
-                    <img src="assets/img/digital-marketing-5816304_1280.jpg">
+                    <?php the_post_thumbnail(' '); // Ose 'large', 'medium', etj. ?>
                 </div>
+
                 <h3 class="post-title">
                     <a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a>
                 </h3>
-                <div class="meta">
-                    <time class="date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('d.m.Y'); ?></time>
-
-                    <?php the_category(', '); ?>
-
-                </div>
 
                 <div class="meta">
-                    <?php the_author('');?>
+                    <time class="date vija" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('d.m.Y'); ?></time>
+
+                    <span class="vija">   <?php the_category(', '); ?></span>
+                     <?php the_author_posts_link(  );?>
                 </div>
+
             </article>
 
         <?php

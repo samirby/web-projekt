@@ -156,5 +156,65 @@ function pagination($paged = '', $max_page = '')
 }
 
 
+// Register Custom Post Type
+// https://generatewp.com/post-type/
+function post_type_projects(): void
+{
+    $labels = array(
+        'name' => _x('Projekte', 'Post Type General Name', 'webdev'),
+        'singular_name' => _x('Projekt', 'Post Type Singular Name', 'webdev'),
+        'menu_name' => __('Projekte', 'webdev'),
+        'name_admin_bar' => __('Projekte', 'webdev'),
+        'archives' => __('Projekt Archiv', 'webdev'),
+        'attributes' => __('Item Attributes', 'webdev'),
+        'parent_item_colon' => __('Parent Item:', 'webdev'),
+        'all_items' => __('Alle Projekte', 'webdev'),
+        'add_new_item' => __('Add New Item', 'webdev'),
+        'add_new' => __('Neues Projekt hinzufügen', 'webdev'),
+        'new_item' => __('Neues Projekt', 'webdev'),
+        'edit_item' => __('Edit Item', 'webdev'),
+        'update_item' => __('Update Item', 'webdev'),
+        'view_item' => __('View Item', 'webdev'),
+        'view_items' => __('View Items', 'webdev'),
+        'search_items' => __('Search Item', 'webdev'),
+        'not_found' => __('Kein Projekt gefunden', 'webdev'),
+        'not_found_in_trash' => __('Not found in Trash', 'webdev'),
+        'featured_image' => __('Projektbild', 'webdev'),
+        'set_featured_image' => __('Projektbild auswählen', 'webdev'),
+        'remove_featured_image' => __('Projektbild entfernen', 'webdev'),
+        'use_featured_image' => __('Als Projektbild verwenden', 'webdev'),
+        'insert_into_item' => __('Insert into item', 'webdev'),
+        'uploaded_to_this_item' => __('Uploaded to this item', 'webdev'),
+        'items_list' => __('Items list', 'webdev'),
+        'items_list_navigation' => __('Items list navigation', 'webdev'),
+        'filter_items_list' => __('Filter items list', 'webdev'),
+    );
+    $args = array(
+        'label' => __('Projekt', 'webdev'),
+        'description' => __('Unsere Projekte', 'webdev'),
+        'labels' => $labels,
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'hierarchical' => false,
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 20,
+        'menu_icon' => 'dashicons-buddicons-replies',
+        'show_in_admin_bar' => true,
+        'show_in_nav_menus' => true,
+        'can_export' => true,
+        'has_archive' => true,
+        'exclude_from_search' => false,
+        'publicly_queryable' => true,
+        'capability_type' => 'page',
+        'show_in_rest' => true
+    );
+    register_post_type('project', $args);
+
+}
+
+add_action('init', 'post_type_projects', 0);
+
+
 
 

@@ -12,8 +12,15 @@
             <?php the_category(' | '); ?>
         </div>
 
-
         <?php include(locate_template('/post_meta.php')); ?>
+
+
+
+        <?php if ( has_post_thumbnail() ) : ?>
+            <div class="post-thumbnail">
+                <?php the_post_thumbnail('full', ['class' => 'full-width']); ?>
+            </div>
+        <?php endif; ?>
 
         <?php if (have_posts()) {
             while (have_posts()) {
@@ -22,6 +29,7 @@
             }
         }
         ?>
+
 
         <?php the_tags('<div class="meta tags">#', ' #', '</div>'); ?>
     </main>
