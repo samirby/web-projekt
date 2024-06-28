@@ -11,12 +11,17 @@ get_header(); // WordPress Funktion zum Einbinden der header.php  ?>
 
 
     <main id="content" class="container">
+
+
+
         <?php /*
         * Sämtliche Texte die wir in unserer functions.php oder in Templates schreiben und im Frontend oder Backend angezeigt werden, sollten über die Textdomain übersetzbar sein!
         * die Ausgabe im PHP wird in der Funktion als echo "_e('Zu übersetzender Text','TEXTDOMAIN')" oder return "__('Zu übersetzender Text','TEXTDOMAIN')" eingebunden
         * https://developer.wordpress.org/reference/functions/_e/
         * den Namen der Textdomain (wifi) haben wir in der functions.php definiert
         */ ?>
+
+
         <h1 class="is-style-headline"><?php _e( 'Projects by Johannes Meier', 'wifi' ); ?></h1>
         <?php /*
         * WordPress Standard Schleife mit geänderten/angepassten Abfrage-Parametern
@@ -38,6 +43,8 @@ get_header(); // WordPress Funktion zum Einbinden der header.php  ?>
             'paged'               => $paged
         ];
 
+
+
         // Query
         $project_query = new WP_Query( $args );
 
@@ -50,6 +57,7 @@ get_header(); // WordPress Funktion zum Einbinden der header.php  ?>
             */
             ?>
             <div class="projects-grid">
+
                 <?php while ( $project_query->have_posts() ) : $project_query->the_post(); ?>
                     <figure class="project">
                         <?php /*
@@ -98,6 +106,7 @@ get_header(); // WordPress Funktion zum Einbinden der header.php  ?>
                         </figcaption>
                     </figure>
                 <?php endwhile; ?>
+
             </div>
         <?php endif; ?>
         <?php // Pagination Function wurde in der functions.php angelegt

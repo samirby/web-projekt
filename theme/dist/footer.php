@@ -2,7 +2,11 @@
 
     <div class="container">
         <div class="footer-container">
+
+
             <div class="box logo-footer info-bus box-logo">
+
+
                 <?php
                 if(function_exists('the_custom_logo')) {
                     the_custom_logo();
@@ -78,6 +82,8 @@
     </div>
 </footer >
 
+
+
 <div class="copyright column">
     <?php
         echo sprintf(__('&copy; %1$s, %2$s', 'webdev'), date('Y'), get_bloginfo('name'));
@@ -86,6 +92,7 @@
 
 <div id="to-top" class="show"><?php _e('Top', 'webdev'); ?></div>
 
+<?php wp_footer(); ?>
 </body>
 </html>
 

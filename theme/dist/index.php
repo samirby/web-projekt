@@ -1,3 +1,4 @@
+<body>
 <?php get_header(); ?>
 
 
@@ -8,6 +9,8 @@
     <h1 class="is-style-headline"><?php echo get_the_title($pagePosts); ?></h1>
 
     <?php the_archive_description( '<p>', '</p>' ); ?>
+
+<div class="blog-container">
 
 
 
@@ -45,6 +48,7 @@
     <?php endif;
     ?>
 
+</div>
 
     <nav class="pagination">
         <?php
@@ -62,6 +66,6 @@
 
 
 <?php get_footer(); ?>
-
+</body>
 
 

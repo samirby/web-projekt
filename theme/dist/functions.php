@@ -59,7 +59,7 @@ add_action('wp_enqueue_scripts', function () {
     });
 
     // Jss im Footer einfügen
-    wp_enqueue_script('webdev-script', get_template_directory_uri() . '/assets/js/scripts.js',[],'1.0',true);
+    wp_enqueue_script('webdev-script', get_template_directory_uri() . '/assets/js/script.js',[],'1.0',true);
 
 });
 
@@ -214,6 +214,13 @@ function post_type_projects(): void
 }
 
 add_action('init', 'post_type_projects', 0);
+
+
+
+
+
+
+
 
 
 

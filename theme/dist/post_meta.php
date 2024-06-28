@@ -6,7 +6,8 @@
 
     <?php the_category('  '); ?>
 
-    <span class="vija">   <?php the_category(', '); ?></span>
+
+
     <?php the_author_posts_link(  );?>
 
 

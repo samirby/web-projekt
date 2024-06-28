@@ -14,15 +14,27 @@
       "defaultPalette": false,
       "palette": [
         {
-          "name": "BG Base",
-          "slug": "bg-base",
-          "color": "orange"
+          "name": "Hauptcolor",
+          "slug": "hauptcolor",
+          "color": "#0E104B"
 
         },
         {
           "name": "Base",
           "slug": "base",
-          "color": "red"
+          "color": "#F7A400"
+        },
+
+        {
+          "name": "Base",
+          "slug": "base",
+          "color": "#ECF6FA"
+        },
+
+        {
+          "name": "Base",
+          "slug": "base",
+          "color": "#FEF6E6"
         }
 
 

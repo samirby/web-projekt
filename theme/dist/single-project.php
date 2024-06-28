@@ -25,14 +25,20 @@ $other_projects = new WP_Query($args);
 if ($other_projects->have_posts()):?>
     <aside class="container other-posts">
         <h2><?php esc_html_e('Ähnliche Projekte', 'webdev'); ?></h2>
+
         <div class="posts-wrapper">
             <?php while ($other_projects->have_posts()):
                 $other_projects->the_post(); ?>
+
                 <article class="post">
-                    <h3><?php echo esc_html(get_the_title()); ?></h3>
+
+                    <div class="image-refe-post">
                     <?php the_post_thumbnail(); ?>
-                    <a class="btn"
-                       href="<?php esc_url(get_the_permalink()); ?>"><?php esc_html_e('Zum Projekt', 'webdev'); ?></a>
+
+                        <h3 class="post-title">
+                            <a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a>
+                        </h3>
+
                 </article>
 
             <?php endwhile; ?>
