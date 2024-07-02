@@ -1,0 +1,225 @@
+:root {
+    --Hauptcolor: #0E104B;
+    --Orange: #F7A400;
+    --BG-light: #ECF6FA;
+    --BG-Light-Orange: #FEF6E6;
+
+    --navbar-height-mobile: 60px;
+    --navbar-height-desktop: 100px;
+}
+
+/* outfit-200 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 200;
+    src: url('//assets/fonts/outfit-v11-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-300 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//assets/fonts/outfit-v11-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-regular - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//assets/fonts/outfit-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-500 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    src: url('//assets/fonts/outfit-v11-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-600 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    src: url('//assets/fonts/outfit-v11-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-700 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//assets/fonts/outfit-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-800 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    src: url('//assets/fonts/outfit-v11-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-900 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    src: url('//assets/fonts/outfit-v11-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 17px;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    margin: 0;
+    padding-top: 60px;
+
+    color: var(--Hauptcolor);
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    background-color: var(--BG-light);
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: clamp(1.765em, 5vw, 70px);
+    line-height: 1;
+    margin-top: 2em;
+}
+
+h2 {
+    font-size: clamp(1.53em, 4vw, 40px);
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+    color: var(--Hauptcolor);
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--Orange);
+}
+
+.container {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: var(--BG-light);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+header{
+    height: 50vh;
+    background-color: red;
+}
+
+.header-container{
+    width: 100%;
+    height: 300px;
+
+}
+
+.section1{
+    height: 50vh;
+    background-color: yellow;
+}
+
+
+/*
+
+body.admin-bar #navbar {
+    top: 46px;
+}
+
+@media (min-width: 782px) {
+    body.admin-bar #navbar {
+        top: 32px;
+    }
+}
+
+ */
+
+
+
+.alignfull{
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0 25px;
+}
+
+
+.site-header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
