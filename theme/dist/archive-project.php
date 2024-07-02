@@ -1,11 +1,11 @@
 <?php get_header(); ?>
+
     <main id="content" class="container">
 
         <?php if (have_posts()): ?>
 
 
-
-                <h2 class="is-style-headline"><?php esc_html_e('Letzte Projekte', 'webdev'); ?></h2>
+            <h1 class="is-style-headline"><?php esc_html_e('Letzte Projekte', 'webdev'); ?></h1>
 
         <div class="blog-container">
 
@@ -13,7 +13,6 @@
                             the_post(); ?>
                             <div class="item">
                                 <?php include(locate_template('components/projects/project_loop.php')); ?>
-
                             </div>
                         <?php endwhile; ?>
 

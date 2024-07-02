@@ -1,4 +1,4 @@
-<footer class="alignfull ">
+<footer class="alignfull">
 
     <div class="container">
         <div class="footer-container">
@@ -12,9 +12,7 @@
                     the_custom_logo();
                 }
                 ?>
-                <p>
-                    <span>Proactively envisioned multimedia based expertise and cross-media growth strategies seamlessly.</span>
-                </p>
+
             </div>
 
 
@@ -80,15 +78,18 @@
             </div>
         </div>
     </div>
-</footer >
 
-
-
-<div class="copyright column">
-    <?php
+    <div class="copyright column">
+        <?php
         echo sprintf(__('&copy; %1$s, %2$s', 'webdev'), date('Y'), get_bloginfo('name'));
-    ?>
-</div>
+        ?>
+    </div>
+</footer>
+
+
+
+
+
 
 <div id="to-top" class="show"><?php _e('Top', 'webdev'); ?></div>
 

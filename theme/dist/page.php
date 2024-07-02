@@ -16,9 +16,7 @@
     ?>
 </main>
 
-
-
-<?php /*
+<?php
 // Kthej titullin e faqes nga ACF
 $page_title = get_field('page_title');
 
@@ -29,7 +27,7 @@ if ($page_title) {
     echo '<h1 class="site-title">' . esc_html($page_title) . '</h1>';
     echo '</div>';
     echo '</header>';
-} */
+}
 ?>
 
 

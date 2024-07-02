@@ -14,8 +14,8 @@ add_action('after_setup_theme', function () {
 
     // Logo
     add_theme_support('custom-logo', [
-        'height' => 60,
-        'width' => 100,
+        'height' => 70,
+        'width' => 150,
 
         // SVG format, schneiden
         'flex-height' => true,

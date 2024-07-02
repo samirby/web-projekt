@@ -20,20 +20,20 @@
 
         },
         {
-          "name": "Base",
-          "slug": "base",
+          "name": "Orange",
+          "slug": "orange",
           "color": "#F7A400"
         },
 
         {
-          "name": "Base",
-          "slug": "base",
+          "name": "BG-Light",
+          "slug": "bg-light",
           "color": "#ECF6FA"
         },
 
         {
-          "name": "Base",
-          "slug": "base",
+          "name": "BG-Light-orange",
+          "slug": "bg-light-orange",
           "color": "#FEF6E6"
         }
 
